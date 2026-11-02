@@ -1,0 +1,5 @@
+replay-receipts contains no third-party source code. It needs these at run time, none of them redistributed here:
+
+- Ollama 0.35.1 (MIT licence), the inference server the experiments talk to.
+- Google Gemma 3 models (gemma3:1b, gemma3:4b, gemma3:1b-it-q8_0), pulled by the user from the Ollama library under the Gemma Terms of Use. The files in raw/ contain only prompts written for this project plus the tokens and logprobs the models produced. They contain no model weights.
+- Python 3.11 standard library and pytest for the tests.

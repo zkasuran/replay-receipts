@@ -1,0 +1,48 @@
+cold_b_vs_cold_a                                        n= 8  IDENTICAL=8 max_dlogprob=0
+repeat_r0_vs_cold_a (server stays up)                   n= 8  IDENTICAL=8 max_dlogprob=0
+repeat_r1_vs_cold_a (server stays up)                   n= 8  IDENTICAL=8 max_dlogprob=0
+repeat_r2_vs_cold_a (server stays up)                   n= 8  IDENTICAL=8 max_dlogprob=0
+repeat_r3_vs_cold_a (server stays up)                   n= 8  IDENTICAL=8 max_dlogprob=0
+repeat_r4_vs_cold_a (server stays up)                   n= 8  IDENTICAL=8 max_dlogprob=0
+threads_t1_vs_cold_a                                    n= 8  IDENTICAL=8 max_dlogprob=0
+threads_t11_vs_cold_a                                   n= 8  IDENTICAL=8 max_dlogprob=0
+threads_t22_vs_cold_a                                   n= 8  IDENTICAL=8 max_dlogprob=0
+threads_t4_vs_cold_a                                    n= 8  IDENTICAL=8 max_dlogprob=0
+restart_rs_vs_cold_a                                    n= 8  IDENTICAL=8 max_dlogprob=0
+batch_b128_vs_cold_a (short prompts, one chunk)         n= 8  IDENTICAL=8 max_dlogprob=0
+batch_b256_vs_cold_a (short prompts, one chunk)         n= 8  IDENTICAL=8 max_dlogprob=0
+batch_b512_vs_cold_a (short prompts, one chunk)         n= 8  IDENTICAL=8 max_dlogprob=0
+batch_b64_vs_cold_a (short prompts, one chunk)          n= 8  IDENTICAL=8 max_dlogprob=0
+ctx_c4096_vs_cold_a (pinned diff aligned)               n= 8  IDENTICAL=8 max_dlogprob=0
+chunk_num_batch256_vs_512 (430-token prompts)           n= 8  DIVERGED=1, IDENTICAL=2, NUMERIC_DRIFT_EXCEEDS_TOL=5 max_dlogprob=0.212
+chunk_num_batch128_vs_512 (430-token prompts)           n= 8  DIVERGED=5, NUMERIC_DRIFT_EXCEEDS_TOL=3 max_dlogprob=0.36
+chunk_num_batch64_vs_512 (430-token prompts)            n= 8  DIVERGED=5, NUMERIC_DRIFT_EXCEEDS_TOL=3 max_dlogprob=0.365
+chunk_num_batch64_vs_64_again                           n= 8  IDENTICAL=8 max_dlogprob=0
+warm_b_vs_warm_a (same cache state)                     n= 8  IDENTICAL=8 max_dlogprob=0
+warm_a_vs_cold_a (cache state differs)                  n= 8  IDENTICAL=4, NOT_COMPARABLE=4 max_dlogprob=0
+warm_orig_vs_warm_a (same cache state)                  n= 8  IDENTICAL=8 max_dlogprob=0
+parallel4_burst_vs_cold_a                               n= 8  DIVERGED=7, NUMERIC_DRIFT_EXCEEDS_TOL=1 max_dlogprob=0.183
+parallel4_burst_vs_burst_again                          n= 8  DIVERGED=6, NUMERIC_DRIFT_EXCEEDS_TOL=2 max_dlogprob=0.575
+parallel4_server_sequential_vs_cold_a                   n= 8  IDENTICAL=8 max_dlogprob=0
+flashattn_f16kv_vs_cold_a                               n= 8  IDENTICAL=8 max_dlogprob=0
+kv_q8_vs_cold_a                                         n= 8  DIVERGED=8
+kv_q4_vs_cold_a                                         n= 8  DIVERGED=8
+kv_q8_vs_flashattn_f16                                  n= 8  DIVERGED=8
+kv_q4_vs_flashattn_f16                                  n= 8  DIVERGED=8
+honest_4b_threadsdefault_vs_threads4                    n= 8  IDENTICAL=8 max_dlogprob=0
+gpu_vulkan_b_vs_gpu_vulkan_a (same device, cold)        n= 8  IDENTICAL=8 max_dlogprob=0
+gpu_vulkan_a_vs_cpu_cold_a (different silicon)          n= 8  DIVERGED=8
+cheat_1b_posing_as_4b                                   n= 8  DIVERGED=8
+cheat_q8_posing_as_q4                                   n= 8  DIVERGED=8
+unforged_q8_vs_q4                                       n= 8  NOT_COMPARABLE=8
+tampered_trace_without_reseal                           n= 8  TAMPERED_RECEIPT=8
+
+ADJ honest_burst_then_solo_rerun                  n= 8  ACCEPT_AFTER_RERUN=8
+ADJ honest_warm_cache_then_cold_rerun             n= 8  ACCEPT=4, ACCEPT_AFTER_RERUN=4
+ADJ honest_gpu_node_vs_cpu_reference_with_rerun   n= 8  REJECT=8
+ADJ honest_gpu_node_vs_gpu_reference              n= 8  ACCEPT=8
+ADJ honest_threads1                               n= 8  ACCEPT=8
+ADJ cheat_kv_q8                                   n= 8  REJECT=8
+ADJ cheat_kv_q4                                   n= 8  REJECT=8
+ADJ cheat_weights_q8_forged_digest                n= 8  REJECT=8
+ADJ cheat_1b_posing_as_4b                         n= 8  REJECT=8

@@ -1,0 +1,45 @@
+{
+ "code": {
+  "LICENSE": "780641485a30acf1c5793b16c9edf27a6dd45949c982a451e76b4c259e6baaab",
+  "experiment.py": "4ac26febc1d8e1de43850bd66a1cd2cb1c9c6c8b177ccc6efbe24c95037d5ede",
+  "replayproof.py": "e693169b8e4bade933d5bc531df7aad11f4d71e0acfef1dc5707d5433e22aacf",
+  "run_all.sh": "754d3920dcd8030bcca2cac01e6ca3b75ca10d2a51f3c1f4c1808d8877faab0a",
+  "summarize.py": "222f8df9276a9c03d5bfa0511e50edfddde4dbaee43af9c6274502b68693acfc"
+ },
+ "environment": {
+  "cpu": "Intel(R) Core(TM) Ultra 9 185H",
+  "kernel": "7.0.0-38-generic",
+  "models": {
+   "gemma3:1b": {
+    "digest": "97558784bdc9175075a72655bf360b15da17df6b3b9e5182af9f8c0c8e58ba7c",
+    "quant": "Q4_K_M"
+   },
+   "gemma3:1b-it-q8_0": {
+    "digest": "e3acf9b8e078bc50252f3ce48fb6935d9391fcf2d53a3ec3836c46d4e3638fcc",
+    "quant": "Q8_0"
+   },
+   "gemma3:4b": {
+    "digest": "68ceab7e468a31c988b44d5a4984a0e21f58c4f7158c6ce29c1804babac38df7",
+    "quant": "Q4_K_M"
+   }
+  },
+  "ollama": "0.35.1",
+  "python": "3.11.5"
+ },
+ "not_verified": [
+  "Nosana GPU nodes",
+  "NVIDIA or AMD GPUs",
+  "Arweave upload",
+  "models above 4B parameters",
+  "more than 8 prompts",
+  "temperature above 0",
+  "cross-machine CPU runs"
+ ],
+ "raw_receipts": {
+  "count": 288,
+  "tree_sha256": "0fa2b06d2e8e6cd2f47cb7ba1c9add7103b535337d9abfd2b693cc52c1ef4666"
+ },
+ "results_json": "37f29add5714414f8cb23f966d1459aed8d598228ebfa0a20b4369821fd65ab1",
+ "results_txt": "799e924c6c03029247315729e2dda9d60fe2e095dd2e2acfe24b047f9432fdae",
+ "tests": "b3336d259d1d8f0e711122bc23d246e70d51722d3e42b3adc9be52baa4da72be"
+}

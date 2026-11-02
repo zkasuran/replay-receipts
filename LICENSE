@@ -1,0 +1,151 @@
+# Source-Available No-Derivatives Licence 1.0
+
+SPDX-License-Identifier: LicenseRef-zkasuran-SAND-1.0
+
+Copyright (c) 2026 zkasuran
+
+## Acceptance
+
+To get any licence under these terms, you must agree to them as both strict
+obligations and conditions to all your licences.
+
+## Copyright licence
+
+The licensor grants you a copyright licence to do everything with the software
+that would otherwise infringe the licensor's copyright in it, for any permitted
+purpose, other than distributing the software or making changes or new works
+based on the software.
+
+## Any purpose is a permitted purpose
+
+Commercial use, personal use, research, teaching and evaluation are all permitted
+purposes. Nothing in these terms limits what you may use the software *for*. The
+limits are on copying it and on changing it.
+
+## Fetching it and running it
+
+The licensor publishes these files at stable hash-pinned URLs so a Telegraph
+validator node, or anyone else, can fetch them and run them. Fetching a copy and
+running it is a permitted use for any purpose, including running it as a scoring
+module on a public network and including running it inside a paid service.
+
+## Reading it
+
+Reading, decompiling, disassembling, instrumenting, measuring, benchmarking and
+testing the software is a permitted use. Publishing what you learn by doing so is
+permitted. Facts about how the software behaves are yours.
+
+## Keeping a copy to verify
+
+You may download and keep copies for as long as you need them to verify a
+published hash, reproduce a measurement or archive what you evaluated.
+
+## What is not granted
+
+These terms grant no permission to:
+
+1. distribute the software, in whole or in part, with or without a fee, whether by
+   hosting it, mirroring it, committing it to a repository or serving it from a
+   URL;
+
+2. make changes or new works based on the software. This includes, and is not
+   limited to, a copy with a function added, removed, renamed or re-exported; a
+   copy with a constant, threshold, weight or table changed; a copy whose output is
+   post-processed by code appended to it; and a copy assembled from bytes taken out
+   of it;
+
+3. present the software, or anything based on it, as your own work or under an
+   identity other than the licensor's, in any registry, protocol, competition or
+   marketplace.
+
+Point 2 follows from the copyright licence above. It is spelled out because
+appending one function to a compiled module and re-serving the whole file is the
+specific act these terms withhold.
+
+## Forking on GitHub
+
+This repository is public on GitHub, and GitHub's terms of service grant every GitHub
+user a licence to view and fork public repositories through GitHub's own
+functionality. That grant sits above this licence and these terms do not try to
+override it. Forking the repository on GitHub is fine.
+
+Note what that grant covers, in GitHub's own words: to "use, display, perform and
+reproduce (by forking)". It does not grant the right to make changes or new works, and
+GitHub says broader permissions have to come from the repository's own licence. This
+licence does not give them. So a fork is a copy you may keep. It is not permission to
+change a binary and publish the changed version, whether from a fork's raw URL or
+anywhere else.
+
+## Fair use
+
+You may have fair use or fair dealing rights under the law. These terms do not
+limit them.
+
+## No other rights
+
+These terms do not allow you to sublicense or transfer any of your licences to
+anyone else, and do not prevent the licensor from granting licences to anyone
+else. They imply no other licences.
+
+## Patent licence
+
+The licensor grants you a patent licence for the software that covers patent
+claims the licensor can license, or becomes able to license, that you would
+infringe by using the software.
+
+## Patent defence
+
+If you make any written claim that the software infringes or contributes to
+infringement of any patent, your patent licence for the software ends
+immediately. If your company makes such a claim, your patent licence ends
+immediately for work on behalf of your company.
+
+## Violations
+
+The first time you are notified in writing that you have violated these terms, or
+done something with the software not covered by your licences, your licences can
+continue if you come into full compliance and take practical steps to correct past
+violations within 32 days of receiving that notice. Otherwise all your licences end
+immediately.
+
+## No liability
+
+***As far as the law allows, the software comes as is, without any warranty or
+condition, and the licensor will not be liable to you for any damages arising out
+of these terms or the use or nature of the software, under any kind of legal
+claim.***
+
+## Definitions
+
+The **licensor** is zkasuran. The **software** is the files in this repository
+that the licensor authored and makes available under these terms. Files authored by
+others are listed in `NOTICE` and are not covered here: they keep the licence their
+own author gave them.
+
+**You** refers to the individual or entity agreeing to these terms.
+
+**Your company** is any legal entity, sole proprietorship or other organisation
+you work for, plus every organisation that controls it, that it controls, or that
+is under common control with it. **Control** means ownership of substantially all
+the assets of an entity, or the power to direct its management and policies by
+vote, contract or otherwise. Control can be direct or indirect.
+
+**Your licences** are all the licences granted to you for the software under these
+terms.
+
+**Use** means anything you do with the software requiring one of your licences.
+
+## Earlier releases stay MIT
+
+Files published in this repository at commits up to and including
+`9250395a8131e4f7da51ab548d455c7270d4acd3` were released under the MIT licence.
+That grant is not withdrawn and could not be: a copy obtained under MIT stays
+under MIT for whoever obtained it. `LICENSE-HISTORY.md` states the exact scope and
+how to tell which files it covers.
+
+## Drafting note
+
+The structure and much of the plain-language wording of this licence is adapted
+from a standardised source-available licence template, with its noncommercial
+restriction replaced by the "any purpose" grant above and its identifying
+references removed, as that template's own terms require of an adaptation.
